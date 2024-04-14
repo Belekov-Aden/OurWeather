@@ -7,5 +7,7 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
+      - name: Dowload requirments
+        run: pip install -r requirements.txt
       - name: Run App
-        run: py app.py
+        run: python app.py
