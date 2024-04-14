@@ -1,5 +1,8 @@
 name: Daily OurWeather
-on: [ push ]
+on:
+  push:
+  schedule:
+    - cron: '* * * * *'
 
 env:
   TELEGRAM_BOT_TOKEN: ${{secrets.TELEGRAM_BOT_TOKEN}}
