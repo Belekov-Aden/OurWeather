@@ -1,6 +1,10 @@
 name: Daily OurWeather
 on: [ push ]
 
+env:
+  TELEGRAM_BOT_TOKEN: ${{secrets.TELEGRAM_BOT_TOKEN}}
+  TELEGRAM_CHANNEL_ID: ${{secrets.TELEGRAM_CHANNEL_ID}}
+
 jobs:
   Daily-Run:
     runs-on: ubuntu-latest
